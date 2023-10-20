@@ -42,7 +42,7 @@ then
 	# cleanup old files from previous attempt if existing
 	[ -d bin ] && rm -rf bin
 	wget https://github.com/containerd/containerd/releases/download/v1.7.7/containerd-1.7.7-linux-${PLATFORM}.tar.gz 
-	tar xvf containerd-1.6.15-linux-${PLATFORM}.tar.gz
+	tar xvf containerd-1.7.7-linux-${PLATFORM}.tar.gz
 	sudo mv bin/* /usr/bin/
 	# Configure containerd
 	sudo mkdir -p /etc/containerd
